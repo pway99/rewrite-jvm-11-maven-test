@@ -1,0 +1,10 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: io.moderne.rewrite-upgrade
+displayName: Upgrade Rewrite to lastest version
+description: Fix all the things.
+recipeList:
+  - org.openrewrite.maven.UpgradeDependencyVersion:
+      groupId: org.mockito
+      artifactId: mockito-junit-jupiter
+      newVersion: 3.12.x
+      trustParent: "false"
