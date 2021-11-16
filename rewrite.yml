@@ -3,8 +3,15 @@ name: io.moderne.rewrite-upgrade
 displayName: Upgrade Rewrite to lastest version
 description: Fix all the things.
 recipeList:
+  - org.openrewrite.java.migrate.guava.NoGuavaListsNewArrayList
+  - org.openrewrite.maven.AddDependency:
+      groupId: org.mockito
+      artifactId: mockito-junit-jupiter
+      version: 3.*
+      #onlyIfUsing: org.mockito.junit.jupiter.MockitoExtension
+      onlyIfUsing: org.junit.jupiter.api.Test
   - org.openrewrite.maven.UpgradeDependencyVersion:
       groupId: org.mockito
       artifactId: mockito-junit-jupiter
-      newVersion: 3.12.x
+      newVersion: 3.*
       trustParent: "false"
