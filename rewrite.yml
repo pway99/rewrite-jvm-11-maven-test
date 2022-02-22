@@ -4,6 +4,6 @@ displayName: Upgrade Rewrite to lastest version
 description: Fix all the things.
 recipeList:
   - org.openrewrite.java.ChangePackage:
-      oldPackageName: org.example.whynottemp
+      oldPackageName: org.example.WhyNot
       newPackageName: org.example.whynot
       recursive: "true"
