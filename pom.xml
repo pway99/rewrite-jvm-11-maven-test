@@ -44,10 +44,10 @@
             <plugin>
                 <groupId>org.openrewrite.maven</groupId>
                 <artifactId>rewrite-maven-plugin</artifactId>
-                <version>4.19.0</version>
+                <version>4.20.0-SNAPSHOT</version>
                 <configuration>
                     <activeRecipes>
-                        <recipe>io.moderne.rewrite-test</recipe>
+                        <recipe>io.moderne.rewrite-move</recipe>
                     </activeRecipes>
                 </configuration>
             </plugin>

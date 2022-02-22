@@ -1,9 +1,9 @@
 type: specs.openrewrite.org/v1beta/recipe
-name: io.moderne.rewrite-test
+name: io.moderne.rewrite-move
 displayName: Upgrade Rewrite to lastest version
 description: Fix all the things.
 recipeList:
   - org.openrewrite.java.ChangePackage:
-      oldPackageName: org.example.WhyNot
-      newPackageName: org.example.whynot
-      recursive: "false"
+      oldPackageName: org.example.whynot
+      newPackageName: org.example.whynottemp
+      recursive: "true"
