@@ -1,0 +1,4 @@
+/Users/pat/test-projects/rewrite-jvm-11-maven-test/child/src/main/java/org/example/C.java
+/Users/pat/test-projects/rewrite-jvm-11-maven-test/child/src/main/java/org/example/whynot/BecausePackagesShouldBeLowerCase.java
+/Users/pat/test-projects/rewrite-jvm-11-maven-test/child/src/main/java/org/example/A.java
+/Users/pat/test-projects/rewrite-jvm-11-maven-test/child/src/main/java/org/example/Application.java

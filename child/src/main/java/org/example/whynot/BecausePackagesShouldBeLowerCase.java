@@ -1,4 +1,4 @@
-package org.example.WhyNot;
+package org.example.whynot;
 
 public class BecausePackagesShouldBeLowerCase {
 }

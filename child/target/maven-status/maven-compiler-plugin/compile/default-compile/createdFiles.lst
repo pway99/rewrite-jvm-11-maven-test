@@ -1,0 +1,5 @@
+org/example/A.class
+org/example/C.class
+org/example/A$B.class
+org/example/whynot/BecausePackagesShouldBeLowerCase.class
+org/example/Application.class
