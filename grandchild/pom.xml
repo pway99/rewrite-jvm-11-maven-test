@@ -11,21 +11,25 @@
 
     <artifactId>grandchild</artifactId>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.example</groupId>
-                <artifactId>child</artifactId>
-                <exclusions>
-
-                </exclusions>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>pr-1</id>
+            <repositories>
+                <repository>
+                    <id>${pr-active}</id>
+                    <name>${pr-active}</name>
+                    <url>${pr-url}</url>
+                </repository>
+            </repositories>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 
 </project>

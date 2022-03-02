@@ -16,6 +16,8 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <pr-active>true</pr-active>
+        <pr-url>bla</pr-url>
     </properties>
 
     <dependencyManagement>
@@ -37,12 +39,6 @@
                 <version>3.12.4</version>
                 <scope>test</scope>
             </dependency>
-            <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-junit-jupiter</artifactId>
-                <version>3.12.4</version>
-                <scope>test</scope>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -51,7 +47,7 @@
             <plugin>
                 <groupId>org.openrewrite.maven</groupId>
                 <artifactId>rewrite-maven-plugin</artifactId>
-                <version>4.19.0</version>
+                <version>4.20.0-SNAPSHOT</version>
                 <configuration>
                     <activeRecipes>
                         <recipe>io.moderne.rewrite-move</recipe>
@@ -60,13 +56,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>pr-1</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-    </profiles>
 </project>
